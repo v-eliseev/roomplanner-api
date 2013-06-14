@@ -1,10 +1,4 @@
-package roomplaner
-
-import roomplanner.Room
-import roomplanner.RoomCategory
-import roomplanner.Reservation
-import roomplanner.RoomAssignment
-import roomplanner.Plan
+package roomplaner.api
 
 /**
 	Remote interface definition

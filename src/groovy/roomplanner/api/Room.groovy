@@ -1,4 +1,4 @@
-package roomplanner
+package roomplanner.api
 
 import javax.xml.bind.annotation.XmlAccessType
 import javax.xml.bind.annotation.XmlAccessorType
@@ -6,10 +6,13 @@ import javax.xml.bind.annotation.XmlAttribute
 import javax.xml.bind.annotation.XmlElement
 
 @XmlAccessorType(XmlAccessType.NONE)
-class RoomCategory implements Serializable {
+class Room implements Serializable {
 
 	@XmlAttribute	Long id
+	@XmlElement		RoomCategory roomCategory
 	@XmlElement		String name
+	@XmlElement 	Integer adults
+	@XmlElement		Boolean nonSmoking = true
 	
 
 	/* (non-Javadoc)
@@ -17,8 +20,10 @@ class RoomCategory implements Serializable {
 	 */
 	@Override
 	public String toString() {
-		"RoomCategory: " + id +
-		" Name: " + name
+		"Room: " + id +
+		" Name: " + name +
+		" Adults: " + adults + 
+		" " + roomCategory.toString()
 	}
-
 }
+
