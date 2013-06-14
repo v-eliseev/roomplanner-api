@@ -1,4 +1,4 @@
-package roomplaner.api
+package roomplanner.api
 
 /**
 	Remote interface definition
