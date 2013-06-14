@@ -3,7 +3,7 @@ package roomplanner.api
 /**
 	Remote interface definition
 */
-interface RoomPlannerService {
+interface IRoomPlannerService {
 
     Plan doPlan(
 		List<Room> rooms, 
