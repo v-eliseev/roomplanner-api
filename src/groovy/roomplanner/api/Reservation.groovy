@@ -17,7 +17,7 @@ class Reservation implements Serializable {
 	@XmlElement		RoomCategory roomCategory
 		
 	@XmlJavaTypeAdapter(IntervalStringAdapter.class)
-	@XmlElement Interval bookingInterval
+	@XmlElement 	Interval bookingInterval
 	
 	@XmlElement		Integer adults
 	@XmlElement		Boolean nonSmoking = true

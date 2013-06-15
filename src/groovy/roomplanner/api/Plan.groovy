@@ -7,10 +7,7 @@ import javax.xml.bind.annotation.XmlElement
 @XmlAccessorType(XmlAccessType.FIELD)
 class Plan implements Serializable {
 	
-	@XmlElement
-	List<RoomAssignment> roomAssignments
-	
-	@XmlElement
-	Score score	
+	@XmlElement 	List<RoomAssignment> roomAssignments
+	@XmlElement		Score score	
 
 }
