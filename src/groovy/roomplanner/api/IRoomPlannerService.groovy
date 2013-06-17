@@ -5,11 +5,11 @@ package roomplanner.api
 */
 interface IRoomPlannerService {
 
-    Plan doPlan(
-		List<Room> rooms, 
-		List<RoomCategory> roomCategories, 
-		List<Reservation> reservations, 
-		List<RoomAssignment> roomAssignments
+    def doPlan(
+		def rooms, 
+		def roomCategories, 
+		def reservations, 
+		def roomAssignments
 		)
 	
 }
