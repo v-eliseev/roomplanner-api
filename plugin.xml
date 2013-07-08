@@ -5,7 +5,9 @@
 </description>
   <documentation>http://grails.org/plugin/roomplanner-api</documentation>
   <type>RoomplannerApiGrailsPlugin</type>
-  <resources />
+  <resources>
+    <resource>joda.IntervalStringAdapter</resource>
+  </resources>
   <repositories>
     <repository name='grailsCentral' url='http://grails.org/plugins' />
     <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
