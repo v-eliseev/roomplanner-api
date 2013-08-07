@@ -1,4 +1,4 @@
-<plugin name='roomplanner-api' version='0.1' grailsVersion='2.2 &gt; *'>
+<plugin name='roomplanner-api' version='0.2' grailsVersion='2.2 &gt; *'>
   <author>Your name</author>
   <title>Roomplanner Api Plugin</title>
   <description>Brief summary/description of the plugin.
