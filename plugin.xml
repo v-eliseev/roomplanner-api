@@ -12,7 +12,11 @@
     <repository name='grailsCentral' url='http://grails.org/plugins' />
     <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
   </repositories>
-  <dependencies />
+  <dependencies>
+    <compile>
+      <dependency group='joda-time' name='joda-time' version='2.2' />
+    </compile>
+  </dependencies>
   <plugins />
   <runtimePluginRequirements />
   <behavior />
