@@ -20,7 +20,7 @@
 		<link>
 			<name>.link_to_grails_plugins</name>
 			<type>2</type>
-			<location>C:/Grails/work/RoomPlanner-API/plugins</location>
+			<location>/home/vlad/Grails/work/roomplanner-api/plugins</location>
 		</link>
 	</linkedResources>
 </projectDescription>
