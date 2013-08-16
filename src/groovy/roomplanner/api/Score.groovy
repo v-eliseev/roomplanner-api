@@ -10,5 +10,5 @@ class Score implements Serializable {
 	@XmlElement Boolean feasible
 	@XmlElement Double hardScoreConstraints
 	@XmlElement Double softScoreConstraints
-//	@XmlElement List<ScoreDetail> scoreDetails
+	@XmlElement List<ScoreDetail> scoreDetails
 }
