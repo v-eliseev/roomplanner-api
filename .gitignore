@@ -48,3 +48,4 @@
 cobertura.ser
 *.log
 *.log.1
+/.gradle
