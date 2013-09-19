@@ -6,6 +6,7 @@ package roomplanner.api
 interface IRoomPlannerService {
 
     def doPlan(
+    	def license,
 		def rooms, 
 		def roomCategories, 
 		def reservations, 
