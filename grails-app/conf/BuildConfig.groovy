@@ -19,7 +19,6 @@ grails.project.fork = [
 ]
 
 grails.project.repos.myRepo.url = "http://192.168.0.35:8080/artifactory/HMS"
-grails.project.repos.myRepo.type = "maven"
 grails.project.repos.myRepo.username = "admin"
 grails.project.repos.myRepo.password = "password"
 
