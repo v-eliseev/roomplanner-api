@@ -6,9 +6,9 @@ import javax.xml.bind.annotation.XmlAttribute
 import javax.xml.bind.annotation.XmlElement
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter
 
-// import joda.IntervalStringAdapter
+import joda.IntervalStringAdapter
 
-// import org.joda.time.Interval
+import org.joda.time.Interval
 
 @XmlAccessorType(XmlAccessType.NONE)
 class Reservation implements Serializable {
@@ -16,8 +16,8 @@ class Reservation implements Serializable {
 	@XmlAttribute	Long id
 	@XmlElement		RoomCategory roomCategory
 		
-	// @XmlJavaTypeAdapter(IntervalStringAdapter.class)
-	// @XmlElement Interval bookingInterval
+	@XmlJavaTypeAdapter(IntervalStringAdapter.class)
+	@XmlElement 	Interval bookingInterval
 	
 	@XmlElement		Integer adults
 	@XmlElement		Boolean nonSmoking = true
@@ -29,7 +29,7 @@ class Reservation implements Serializable {
 	@Override
 	public String toString() {
 		"Reservation: " + id +
-//		" Period: " + bookingInterval.toString() +
+		" Period: " + bookingInterval.toString() +
 		" Adults: " + adults +
 		" " + roomCategory.toString()
 	}
