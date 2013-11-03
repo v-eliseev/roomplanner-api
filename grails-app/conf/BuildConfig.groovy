@@ -18,7 +18,7 @@ grails.project.fork = [
     console: [maxMemory: 768, minMemory: 64, debug: false, maxPerm: 256]
 ]
 
-grails.project.repos.myRepo.url = "http://192.168.0.35:8080/artifactory/HMS"
+grails.project.repos.myRepo.url = "http://192.168.0.37:8080/artifactory/HMS"
 grails.project.repos.myRepo.username = "admin"
 grails.project.repos.myRepo.password = "password"
 
