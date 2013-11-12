@@ -8,8 +8,8 @@ import javax.xml.bind.annotation.XmlElement
 class Pricelist implements Serializable {
 	
 	@XmlElement Long licenseId
-	@XmlElement Date fromDate
-	@XmlElement Date toDate
+	@XmlElement Date dateFrom
+	@XmlElement Date dateTo
 	
 	@XmlElement List<PricelistItem> items
 
