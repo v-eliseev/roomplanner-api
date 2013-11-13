@@ -3,13 +3,21 @@ package roomplanner.api
 import javax.xml.bind.annotation.XmlAccessType
 import javax.xml.bind.annotation.XmlAccessorType
 import javax.xml.bind.annotation.XmlElement
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter
+
+import joda.DateTimeLongAdapter
+import org.joda.time.DateTime
 
 @XmlAccessorType(XmlAccessType.FIELD)
 class Pricelist implements Serializable {
 	
 	@XmlElement Long licenseId
-	@XmlElement Date dateFrom
-	@XmlElement Date dateTo
+	
+	@XmlJavaTypeAdapter(DateTimeLongAdapter.class)
+	@XmlElement DateTime dateFrom
+
+	@XmlJavaTypeAdapter(DateTimeLongAdapter.class)
+	@XmlElement DateTime dateTo
 	
 	@XmlElement List<PricelistItem> items
 
