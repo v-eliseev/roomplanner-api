@@ -5,13 +5,13 @@ import javax.xml.bind.annotation.XmlAccessorType
 import javax.xml.bind.annotation.XmlElement
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter
 
-import joda.DateTimeLongAdapter
+import joda.DateTimeStringAdapter
 import org.joda.time.DateTime
 
 @XmlAccessorType(XmlAccessType.FIELD)
 class PricelistItem implements Serializable {
 	
-	@XmlJavaTypeAdapter(DateTimeLongAdapter.class)
+	@XmlJavaTypeAdapter(DateTimeStringAdapter.class)
 	@XmlElement DateTime onDate
 
 	@XmlElement BigDecimal rate

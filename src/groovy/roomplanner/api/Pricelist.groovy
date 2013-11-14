@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlAccessorType
 import javax.xml.bind.annotation.XmlElement
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter
 
-import joda.DateTimeLongAdapter
+import joda.DateTimeStringAdapter
 import org.joda.time.DateTime
 
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -13,11 +13,11 @@ class Pricelist implements Serializable {
 	
 	@XmlElement Long licenseId
 	
-	@XmlJavaTypeAdapter(DateTimeLongAdapter.class)
-	@XmlElement DateTime dateFrom
+	@XmlJavaTypeAdapter(DateTimeStringAdapter.class)
+	@XmlElement DateTime fromDate
 
-	@XmlJavaTypeAdapter(DateTimeLongAdapter.class)
-	@XmlElement DateTime dateTo
+	@XmlJavaTypeAdapter(DateTimeStringAdapter.class)
+	@XmlElement DateTime toDate
 	
 	@XmlElement List<PricelistItem> items
 
@@ -26,6 +26,6 @@ class Pricelist implements Serializable {
 	 */
 	@Override
 	public String toString() {
-		"[licenseId: $licenseId, period: $fromDate-$toDate, size: $items.size()]"
+		"[licenseId: $licenseId, period: $dateFrom-$dateTo, size: $items.size()]"
 	}
 }
