@@ -13,5 +13,7 @@ interface IRoomPlannerService {
 		def roomAssignments,
 		def pricelist
 		)
+
+    def getStatus()
 	
 }
