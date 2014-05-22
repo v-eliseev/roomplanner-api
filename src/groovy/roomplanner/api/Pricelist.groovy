@@ -26,6 +26,6 @@ class Pricelist implements Serializable {
 	 */
 	@Override
 	public String toString() {
-		"[licenseId: $licenseId, period: $dateFrom-$dateTo, size: $items.size()]"
+		"[licenseId: $licenseId, period: $fromDate-$toDate, size: $items?.size()]"
 	}
 }
